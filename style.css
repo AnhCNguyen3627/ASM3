@@ -1,0 +1,391 @@
+html, body {
+  font-family:"Poppins", sans-serif;
+  margin:0;
+}
+@media only screen and (max-width: 768px) {
+  img {
+    width: 100%;
+  }
+  .down {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  header p,
+  hr {
+    display: none;
+  }
+  header a {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+  }
+  header button:hover,
+  header a:hover {
+    color: black;
+    background-color: gray;
+  }
+  main .intro h2 {
+    color: green;
+  }
+  main p span {
+    font-size: x-large;
+  }
+  .intro button {
+    padding:15px 20px;
+    border:none;
+  }
+  .intro button:hover {
+    background-color: grey;
+  }
+  main .cla {
+    background-color: lightgrey;
+  }
+  main .cla h2 {
+    color: red;
+  }
+  main .feat {
+    background-color: gray;
+    color: white;
+    display: inline-block;
+  }
+  .feat h2,
+  .price h2,
+  .desc {
+    text-align: center;
+  }
+  .feat1,
+  .feat3,
+  .feat5,
+  .feat7,
+  .feat9,
+  .feat11 {
+    width: 50%;
+    float: left;
+    text-align: center;
+    font-size: 200%;
+  }
+  .feat2,
+  .feat4,
+  .feat6,
+  .feat8,
+  .feat10,
+  .feat12 {
+    width: 50%;
+    float: right;
+    text-align: center;
+    font-size: 200%;
+  }
+  .feat i {
+    font-size: 150%;
+  }
+  .price .desc {
+    color: gray;
+  }
+  .intro,
+  .cla {
+    padding: 0px 10px 10px 10px;
+  }
+  .left ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 60%;
+  }
+  .left li {
+    border: solid 1px;
+    padding: 10px;
+    text-align: center;
+  }
+  .left .top {
+    background-color: gray;
+    color: white;
+    border:none;
+  }
+  .left button {
+    background-color: black;
+    color: white;
+    padding: 5px 8px;
+    border: none;
+  }
+  .right ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 60%;
+  }
+  .right li {
+    border: solid 1px;
+    padding: 10px;
+    text-align: center;
+  }
+  .right .top {
+    background-color: orangered;
+    color: white;
+    border:none;
+  }
+  .right button {
+    background-color: black;
+    color: white;
+    padding: 5px 8px;
+    border: none;
+  }
+  .right {
+    margin-top: 20px;
+  }
+  .left ul:hover,
+  .right ul:hover {
+    box-shadow: 2px 2px 5px gray;
+  }
+  .left button:hover,
+  .right button:hover {
+    background-color: lightgray;
+    color: black;
+  }
+  body {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto;
+  }
+  footer {
+    background-color: lightgrey;
+    padding: 30px;
+    text-align: center;
+  }
+  footer i {
+    padding: 0px 5px;
+  }
+  fieldset {
+    border: none;
+    margin: 0;
+  }
+  .left, .right {
+    margin:20px;
+  }
+}
+@media only screen and (min-width: 769px) {
+  header {
+    position: relative;
+  }
+  header img {
+    width: 100%;
+  }
+  .opa-box {
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 35%;
+    position: absolute;
+    opacity: 0.5;
+    padding: 10px;
+    margin-left: 3%;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  .down {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    border-radius: 0.5ch;
+  }
+  header a {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    border-radius: 0.5ch;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right:3%;
+    text-decoration: none;
+  }
+  .opa-box:hover {
+    opacity: 1;
+  }
+  header button:hover,
+  header a:hover {
+    color: black;
+    background-color: gray;
+  }
+  main .intro h2 {
+    color: green;
+  }
+  main p span {
+    font-size: x-large;
+  }
+  .intro {
+    display: block;
+    background-color: white;
+    width: 100%;
+  }
+  .intro .content {
+    width: 70%;
+    float: left;
+    padding: 10px;
+  }
+  .intro .pic {
+    width: 20%;
+    float: right;
+    padding: 10px;
+  }
+  .intro img {
+    width: 100%;
+    float: center;
+    margin: auto;
+  }
+  .intro button {
+    padding:15px 20px;
+    border:none;
+  }
+  .intro button:hover {
+    background-color: grey;
+  }
+  .cla {
+    display: block;
+    background-color: lightgray;
+    width: 100%;
+  }
+  .cla .pic {
+    width: 20%;
+    float: left;
+    padding: 10px;
+  }
+  .cla h2 {
+    color: red;
+  }
+  .cla img {
+    float: center;
+    width: 100%;
+    margin: auto;
+  }
+  .cla .content {
+    width: 70%;
+    float: right;
+    padding: 10px;
+  }
+  .feat {
+    background-color: gray;
+    color: white;
+    display: inline-block;
+    width: 100%;
+  }
+  .feat h2,
+  .price h2,
+  .desc {
+    text-align: center;
+  }
+  .feat1,
+  .feat2,
+  .feat3,
+  .feat4,
+  .feat5,
+  .feat6,
+  .feat7,
+  .feat8,
+  .feat9,
+  .feat10,
+  .feat11,
+  .feat12 {
+    float: left;
+    width: 25%;
+    text-align: center;
+    font-size: 200%;
+  }
+  body {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto;
+  }
+  fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  .left ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 49%;
+    float: left;
+  }
+  .left li {
+    border: solid 1px gray;
+    padding: 10px;
+    text-align: center;
+  }
+  .left .top {
+    background-color: gray;
+    color: white;
+    border:none;
+  }
+  .left button {
+    background-color: black;
+    color: white;
+    padding: 5px 8px;
+    border: none;
+  }
+  .right ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 49%;
+    float: right;
+  }
+  .right li {
+    border: solid 1px gray;
+    padding: 10px;
+    text-align: center;
+  }
+  .right .top {
+    background-color: orangered;
+    color: white;
+    border:none;
+  }
+  .right button {
+    background-color: black;
+    color: white;
+    padding: 5px 8px;
+    border: none;
+  }
+  .left ul:hover,
+  .right ul:hover {
+    box-shadow: 2px 2px 5px gray;
+  }
+  .left button:hover,
+  .right button:hover {
+    background-color: lightgray;
+    color: black;
+  }
+  .left, .right {
+    margin:20px;
+  }
+  footer {
+    background-color: lightgrey;
+    padding: 30px;
+    text-align: center;
+  }
+  footer i {
+    padding: 0px 5px;
+  }
+  .intro .fa-android {
+    color:#3DDC84;
+  }
+  .intro .fa-windows {
+    color:#357EC7;
+  }
+  .down-box {
+    background-color: lightgray;
+  }
+}
